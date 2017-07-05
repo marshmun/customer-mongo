@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="/employed">Employed</a>
+    <a href="/unemployed">Unmployed</a>
+
+    <div class="container">
+        {{#listedUsers}}
+        <div class="eachUser">
+            <img src={{avatar}}>
+            <p class="name">{{name}}</p>
+            <p class="job">{{job}} {{#job}} {{company}} {{/job}} {{^job}}
+                <h4 class="red">Available for hire!
+                    <h4> {{/job}}</p>
+        </div>
+        {{/listedUsers}}
+    </div>
+    <div class="newContainer">
+        {{#listedUsers}}
+        <div class="theLot">
+            <div class="oneEach">
+                <img src={{avatar}}>
+            </div>
+            <div class="information">
+                <p class="namer">
+                    <h1>{{name}}</h1>
+                </p>
+                <p class="address"> {{address.city}} , {{address.country}} | {{job}} {{#job}} {{company}} {{/job}} {{^job}}
+                    <h4 class="red">Available for hire!
+                    </h4> {{/job}}
+                </p>
+                <p class="secondRow">{{email}} | {{phone}}
+                </p>
+                <p class="education"> {{#university}}<b> Education:</b> {{university}} {{/university}}
+                </p>
+                <div class="popTogether">
+                    <div class="killers">
+                        <p class="skills"> <b>Skills:</b>
+                    </div>
+                    <div class="display">
+                        <ul>{{#skills}}
+                            <li>{{.}}</li>{{/skills}}</il>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/listedUsers}}
+    </div>
+
+
+
+</body>
+
+</html>

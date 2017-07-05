@@ -1,0 +1,22 @@
+{
+  "name": "profiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marshmun/profiler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marshmun/profiler/issues"
+  },
+  "homepage": "https://github.com/marshmun/profiler#readme",
+  "dependencies": {
+    "mustache-express": "^1.2.4"
+  }
+}
